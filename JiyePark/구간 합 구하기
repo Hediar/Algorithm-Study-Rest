@@ -1,0 +1,27 @@
+#구간 합 구하기 
+
+import sys
+
+suNo, quizNo = map(int, input('suNo와 quizNo를 입력하세요 : ').split())
+numbers = list(map(int, input('숫자 목록을 입력하세요: ').split()))
+prefix_sum = [0]
+temp = 0
+
+# 누적 합 배열 생성
+for i in numbers:
+    temp = temp + i
+    prefix_sum.append(temp)
+
+# 누적 합 배열에서 구간 합 계산
+for i in range(quizNo):
+    s, e = map(int, input('범위를 입력하세요 (s와 e): ').split())
+    print(prefix_sum[e] - prefix_sum[s - 1])
+
+    
+
+
+#합 배열에서 구간 합 구하기 
+for i in range(quizNo):
+    s, e = map(int, input().split())
+    print(prefix_sum[e]-prefix_sum[s-1])
+    
