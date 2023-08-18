@@ -1,4 +1,5 @@
 """
+구현
 https://deeply-silence-9a4.notion.site/76769642da9a4fbe962e82ffa74aaf35?pvs=4
 """
 n = int(input())
